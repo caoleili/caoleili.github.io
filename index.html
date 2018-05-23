@@ -1,457 +1,222 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  
-
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="default">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="Hexo"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Hexo"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://yoursite.com"/>
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
+
+  <!-- Site Title -->
+  <title>Hexo</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
   
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
   
-  <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Hexo</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/<your-github-username>">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:<your-email-address>">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-java基本-0" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/05/23/java基本-0/" class="article-date">
-  <time datetime="2018-05-23T07:33:19.000Z" itemprop="datePublished">2018-05-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/23/java基本-0/">java基本</a>
-    </h1>
-  
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
+<!-- Home Page Post List -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-md-10 col-md-offset-1">
       
-        <ul>
-<li>Q：简单讲一下Java的跨平台原理</li>
-<li><p>A：JAVA通过不同版本，不同位数的虚拟机，来屏蔽不同的系统差异，而对外提供统一的接口，JAVA      API。对于普通的java开发者，只需要按照接口开发即可。如果的系统需要部署到不同的环境时，在系统上安装不同版本的虚拟机即可</p>
-<p>Q:搭建java开发环境</p>
-<p>A：JDK，myelipse（idea），tomcat</p>
-<p>Q:JAVA中的int数据占几个字节<br>A：基本数据类型：</p>
-<p>  int：32字节，4个字节，</p>
-<p>  boolean：1个字节，？？</p>
-</li>
-</ul>
-<hr>
-<p>  Q:面向对象的特征</p>
-<p>  A：</p>
-<pre><code>| 封装：张三这个人，要有自己来提供或者获取，设置。 setName(),getName()
+        <div class="post-item-wrapper">
+  <a href="/2018/05/23/java基本-0/" class="post-title">
+      java基本
+  </a>
+  <div class="post-excerpt">
+    <!-- Post Date and Categories -->
+    <div class="date-and-category">
+      <div class="date">2018-05-23</div>
+      <div class="categories">
+        
+          Uncategorized
+        
+      </div>
+    </div>
+    <!-- Post Excerpt -->
+    <div class="excerpt typo">暂无文章摘要</div>
+    <!-- Post Tags -->
+    <div class="tags">
+      
+        <div class="untagged">Untagged</div>
+      
+    </div>
+  </div>
+</div>
 
-| 抽象：现实都行抽象成类
+      
+        <div class="post-item-wrapper">
+  <a href="/2018/05/22/hello-pretty/" class="post-title">
+      hello,pretty
+  </a>
+  <div class="post-excerpt">
+    <!-- Post Date and Categories -->
+    <div class="date-and-category">
+      <div class="date">2018-05-22</div>
+      <div class="categories">
+        
+          Uncategorized
+        
+      </div>
+    </div>
+    <!-- Post Excerpt -->
+    <div class="excerpt typo">暂无文章摘要</div>
+    <!-- Post Tags -->
+    <div class="tags">
+      
+        <div class="untagged">Untagged</div>
+      
+    </div>
+  </div>
+</div>
 
-| 继承：创建类的话，可以继承已经存在的类，遗产继承
-
-| 多态：包括方法重写和重载。编程时候不确定，运行时候才进行动态绑定
-</code></pre><ul>
-<li><p>Q：访问修饰符public,private,protected,以及不写（默认）时的区别？</p>
-<p>A： </p>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>修饰符</th>
-<th>当前类</th>
-<th>同 包</th>
-<th>子 类</th>
-<th>其他包</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>public</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>protected</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>× </td>
-</tr>
-<tr>
-<td>default</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>private</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<ul>
-<li>Q:有了基本的数据类型，为什么需要包装类型</li>
-<li>A：基本数据类型是java中提供的8种基本数据类型，boolean（？？），int（4），float（4），==long（8）==，==char（2）==，byte（1），==short（2），double（8）==等；</li>
-<li><p>|包装类型：Boolean,INTEGER,FLOAT,（基本类型都会对应一个包装类型）</p>
-<p>装箱和拆箱：</p>
-<p>装箱：把基本数据转换成对应的包装类型<br>自动装箱（jdk1.5）：底层在编译时，会调用interger的valueof来装箱<br>拆箱：把包装类型转化为基本的类型,和名称<br>自动拆箱：底层在编译时,会调用Integer.intValue</p>
-<p>==缓存区域：（看源码）==</p>
-<p>java是面向对象的语言，让基本类型据有面向对象的特性</p>
-<p>max<br>min<br>缓存值Integer<br>Integer i=1;Integer j=1;i==j</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">   public class Test03 &#123;</span><br><span class="line"> </span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Integer f1 = 100, f2 = 100, f3 = 150, f4 = 150;</span><br><span class="line"> </span><br><span class="line">        System.out.println(f1 == f2);</span><br><span class="line">        System.out.println(f3 == f4);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;//Integer的值在-128到127，不会new出新对象，而直接引用常量池里的Integer对象</span><br></pre></td></tr></table></figure>
-<ul>
-<li>构造器不能被继承，但是不能被重写，可以被重载</li>
-<li>String类不能被继承</li>
-</ul>
-<hr>
-<ul>
-<li><p>Q：简述一下JVM加载class文件的原理机制<br>A：<br>  加载：class加载到内存，创建字节数组读入.class文件，生成对象</p>
-<p>  连接：验证，准备（static变量分配内存并设置初始值），解析（符号引用替换为直接引用）</p>
-<p>  初始化：1）.父类没有初始化，初始化父类 2）.有初始化语句就执行初始化语句</p>
-<p>  加载器：Bootstrap（加载JVM核心库）,Extension（系统属性指定目录加载类库，父类的Bootstrap），System（classpatch环境变量加载）</p>
-</li>
-</ul>
-<hr>
-<ul>
-<li><p>Q：抽象类（abstract class）和接口（interface）的区别</p>
-<p>A：</p>
-<p>  共同：都不能够实例化，类（非抽象类）继承他们都要实现所有抽象方法</p>
-<p>  不同：接口比抽象类更抽象，抽象类可以定义构造器，可有抽象方法和具体方法，接口不行</p>
-<p>  抽象类中成员可以是private、default，protected，public的，接口都是public </p>
-<p>  抽象类可以定义成员变量，接口中成员变量是常量，</p>
-<p>  抽象方法的类必须被声明为抽象类，而抽象类未必要有抽象方法</p>
-<p>  abstract和 static（native）矛盾</p>
-</li>
-</ul>
-<hr>
-<ul>
-<li><p>Q：如何实现对象的克隆</p>
-<p>A：</p>
-<ol>
-<li><p>实现Clonable接口并重写Object类中的clone（）方法</p>
-</li>
-<li><p>实现Serializable接口，通过对象的序列化和反序列化实现克隆</p>
-</li>
-</ol>
-<p>优于Object的clone方法，可以在编译的时候抛出异常</p>
-</li>
-</ul>
-<p>‘’’<br>  import java.io.ByteArrayInputStream;<br>import java.io.ByteArrayOutputStream;<br>import java.io.ObjectInputStream;<br>import java.io.ObjectOutputStream;</p>
-<p>public class MyUtil {</p>
-<pre><code>private MyUtil() {
-    throw new AssertionError();
-}
-
-public static &lt;T&gt; T clone(T obj) throws Exception {
-    ByteArrayOutputStream bout = new ByteArrayOutputStream();
-    ObjectOutputStream oos = new ObjectOutputStream(bout);
-    oos.writeObject(obj);
-
-    ByteArrayInputStream bin = new ByteArrayInputStream(bout.toByteArray());
-    ObjectInputStream ois = new ObjectInputStream(bin);
-    return (T) ois.readObject();
-
-    // 说明：调用ByteArrayInputStream或ByteArrayOutputStream对象的close方法没有任何意义
-    // 这两个基于内存的流只要垃圾回收器清理对象就能够释放资源，这一点不同于对外部资源（如文件流）的释放
-}
-</code></pre><p>}<br>‘’’  </p>
-<ul>
-<li><p>Q：String s = new String（“xyz”），创建了几个对象</p>
-<p>A：两个对象，一个去静态去的“xyz”，一个是用new 创建在堆上的对象</p>
-</li>
-<li><p>接口可以继承接口，而且支持多重继承。抽象类可以实现(implements)接口，抽象类可继承具体类也可以继承抽象类。（抽象类不能实例化）</p>
-</li>
-<li><p>创建对象时构造器的调用顺序是：先初始化静态成员，然后调用父类构造器，再初始化非静态成员，最后调用自身构造器。 </p>
-</li>
-</ul>
-<hr>
-<ul>
-<li><p>Q：内部类可以引用它的包含类（外部类）的成员吗？有没有什么限制</p>
-<p>A：一个内部类对象可以访问创建它的外部类对象的成员，包括私有成员 </p>
-</li>
-</ul>
-<hr>
-<ul>
-<li><p>Q：final的用法</p>
-<p>修饰类：不能被继承</p>
-<p>方法：不能被重写</p>
-<p>修饰变量：表示变量只能一次赋值，不能被修改</p>
-</li>
-</ul>
-<hr>
-<ul>
-<li>Q：java 8 日期api</li>
-</ul>
-<hr>
-<ul>
-<li>try里有个return语句，try 后的finally会在返回前执行（在finally改变返回值是不好的）</li>
-</ul>
-<hr>
-<ul>
-<li>Q：finalize，由垃圾收集器在销毁对象调用的</li>
-</ul>
-<hr>
-<ul>
-<li><p>Q:==和equals的区别是什么</p>
-<p>A：==是操作符，判断变量的值是否相等，</p>
-<p> 如果是基本类型的变量，直接比较；</p>
-<p> 如果是引用类型，需要比较对应的引用的内存的首地址</p>
-<p> 内存分为栈和堆：如果是基本的数据类型，<br> int i =1；<br> int j=1；的内存结构</p>
-<p>equals：比较两个对象的是否一样，判断两个对象的某些特征是否一样。</p>
-<p>String的equals对象；对象做比较是，实际是调用对象的equals方法，重写object的equals方法</p>
-</li>
-</ul>
-<hr>
-<ul>
-<li><p>Q：String 和StringBulider的区别<br>String，StringBuilder，StringBuffer来表示和操作字符串</p>
-<p>字符串就是多个字符的集合</p>
-<p>String是内容是不可变的字符串，一个字符串new出来传个值进去，值就定了，使用不可变的字符数组，final，</p>
-<p>final值不能变，类，方法不能继承</p>
-<p>StringBuilder，StringBuffer是内容可以改变的字符串，可变的字符字符数组，没有final来修饰，append方法，</p>
-<p>String c=”a”+”b”；需要三个对象，浪费时间</p>
-<p>StringBulider或者StringBuffer，拼接字符串</p>
-<p>StringBulider是线程不安全的，效率较高；StringBuffer是线程安全的，效率较低；</p>
-</li>
-</ul>
+      
+        <div class="post-item-wrapper">
+  <a href="/2018/05/22/hello-world/" class="post-title">
+      Hello World
+  </a>
+  <div class="post-excerpt">
+    <!-- Post Date and Categories -->
+    <div class="date-and-category">
+      <div class="date">2018-05-22</div>
+      <div class="categories">
+        
+          Uncategorized
+        
+      </div>
+    </div>
+    <!-- Post Excerpt -->
+    <div class="excerpt typo">暂无文章摘要</div>
+    <!-- Post Tags -->
+    <div class="tags">
+      
+        <div class="untagged">Untagged</div>
+      
+    </div>
+  </div>
+</div>
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/23/java基本-0/" data-id="cjhisshky0001a0wc45zkjt6e" class="article-share-link">Share</a>
-      
-      
-    </footer>
   </div>
-  
-</article>
+</div>
 
-
-  
-    <article id="post-hello-pretty" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/05/22/hello-pretty/" class="article-date">
-  <time datetime="2018-05-22T06:26:46.000Z" itemprop="datePublished">2018-05-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/22/hello-pretty/">hello,pretty</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/22/hello-pretty/" data-id="cjhisshkt0000a0wctv9qmlci" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/05/22/hello-world/" class="article-date">
-  <time datetime="2018-05-22T02:55:36.221Z" itemprop="datePublished">2018-05-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/22/hello-world/" data-id="cjhisshl00002a0wc4rx32ej1" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/05/23/java基本-0/">java基本</a>
-          </li>
-        
-          <li>
-            <a href="/2018/05/22/hello-pretty/">hello,pretty</a>
-          </li>
-        
-          <li>
-            <a href="/2018/05/22/hello-world/">Hello World</a>
-          </li>
-        
+<!-- Pagination -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-md-10 col-md-offset-1">
+      <ul class="pagination">
+          
+          
       </ul>
     </div>
   </div>
+</div>
 
-  
-</aside>
-        
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
 
-
-<script src="/js/script.js"></script>
-
-
-
-  </div>
-</body>
+  </body>
 </html>
+
